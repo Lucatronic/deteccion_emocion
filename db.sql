@@ -12,7 +12,20 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Volcando datos para la tabla emoreco.emocion: ~934 rows (aproximadamente)
+
+-- Volcando estructura de base de datos para emoreco
+CREATE DATABASE IF NOT EXISTS `emoreco` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_spanish_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `emoreco`;
+
+-- Volcando estructura para tabla emoreco.emocion
+CREATE TABLE IF NOT EXISTS `emocion` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `emocion` varchar(50) COLLATE latin1_spanish_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=935 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+-- Volcando datos para la tabla emoreco.emocion: ~933 rows (aproximadamente)
 /*!40000 ALTER TABLE `emocion` DISABLE KEYS */;
 INSERT INTO `emocion` (`id`, `fecha`, `emocion`) VALUES
 	(1, '2022-12-07 09:03:57', 'Enojado'),
@@ -950,7 +963,17 @@ INSERT INTO `emocion` (`id`, `fecha`, `emocion`) VALUES
 	(934, '2022-12-08 20:05:14', 'Neutral');
 /*!40000 ALTER TABLE `emocion` ENABLE KEYS */;
 
--- Volcando datos para la tabla emoreco.usuario: ~0 rows (aproximadamente)
+-- Volcando estructura para tabla emoreco.usuario
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL DEFAULT '',
+  `pass` varchar(50) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL DEFAULT '',
+  `privilegio` varchar(50) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL DEFAULT '',
+  `activo` int NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+-- Volcando datos para la tabla emoreco.usuario: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
 INSERT INTO `usuario` (`id`, `nombre`, `pass`, `privilegio`, `activo`) VALUES
 	(1, 'admin', '123', 'Administrador', 1),
