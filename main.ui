@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QMainWindow" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>main</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>571</width>
+      <height>481</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionLogin"/>
+    <addaction name="actionLogout"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+    <addaction name="actionGestion_de_Usuarios"/>
+   </widget>
+   <widget class="QMenu" name="menuCamara">
+    <property name="title">
+     <string>Cámara</string>
+    </property>
+    <addaction name="actionIniciar_Camara"/>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>Reportes</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionEstadisticas_Emociones"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAdmin"/>
+   <addaction name="menuCamara"/>
+   <addaction name="menuReportes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Iniciar Sesión</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Cerrar Sesión</string>
+   </property>
+  </action>
+  <action name="actionGestion_de_Usuarios">
+   <property name="text">
+    <string>Gestión de Usuarios</string>
+   </property>
+  </action>
+  <action name="actionCuenta">
+   <property name="text">
+    <string>Cuenta</string>
+   </property>
+  </action>
+  <action name="actionDeposito">
+   <property name="text">
+    <string>Depósito</string>
+   </property>
+  </action>
+  <action name="actionExtraccion">
+   <property name="text">
+    <string>Extracción</string>
+   </property>
+  </action>
+  <action name="actionClientes">
+   <property name="text">
+    <string>Gestionar Clientes</string>
+   </property>
+  </action>
+  <action name="actionAntecedentes">
+   <property name="text">
+    <string>Antecedentes</string>
+   </property>
+  </action>
+  <action name="actionEstadisticas_Emociones">
+   <property name="text">
+    <string>Estadisticas de Emociones</string>
+   </property>
+  </action>
+  <action name="actionReporte_de_Clientes">
+   <property name="text">
+    <string>Reporte de Clientes</string>
+   </property>
+  </action>
+  <action name="actionReporte_de_Usuarios">
+   <property name="text">
+    <string>Reporte de Usuarios</string>
+   </property>
+  </action>
+  <action name="actionGestion_de_Usuarios_2">
+   <property name="text">
+    <string>Gestión de Usuarios</string>
+   </property>
+  </action>
+  <action name="actionIniciar_Camara">
+   <property name="text">
+    <string>Iniciar Cámara</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Camara">
+   <property name="text">
+    <string>Cerrar Cámara</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

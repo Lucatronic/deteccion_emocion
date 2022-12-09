@@ -1,0 +1,3 @@
+{
+    "files": ["conndb.py","graph.py","user_management.py","user_management.ui","main.py","live_cam.py","main.ui","login.py","login.ui"]
+}
